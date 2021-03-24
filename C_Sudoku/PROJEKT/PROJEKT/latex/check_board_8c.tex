@@ -1,0 +1,102 @@
+\hypertarget{check_board_8c}{}\section{check\+Board.\+c File Reference}
+\label{check_board_8c}\index{checkBoard.c@{checkBoard.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}checkboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Include dependency graph for check\+Board.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{check_board_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{check_board_8c_afb04fa8cf7697388b17e20efc675752e}{checking}} (char $\ast$pointer)
+\item 
+bool \mbox{\hyperlink{check_board_8c_a7dc0b200f0959496819b3076472a1d9e}{checking\+Columns}} (char $\ast$pointer)
+\item 
+bool \mbox{\hyperlink{check_board_8c_a7b41ee6df7b83fbed05006347c62b836}{checking\+Rows}} (char $\ast$pointer)
+\item 
+bool \mbox{\hyperlink{check_board_8c_ac819d0f2eb5ba6c90422323fc75c16ed}{checking\+Squares}} (char $\ast$pointer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{check_board_8c_afb04fa8cf7697388b17e20efc675752e}\label{check_board_8c_afb04fa8cf7697388b17e20efc675752e}} 
+\index{checkBoard.c@{checkBoard.c}!checking@{checking}}
+\index{checking@{checking}!checkBoard.c@{checkBoard.c}}
+\subsubsection{\texorpdfstring{checking()}{checking()}}
+{\footnotesize\ttfamily bool checking (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer }\end{DoxyParamCaption})}
+
+Funkcja sprawdza, czy tablica sudoku jest dobrze wypelniona 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, gdy prawidlowo wypelnione 
+
+false, gdy zle wypelnione 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{check_board_8c_afb04fa8cf7697388b17e20efc675752e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{check_board_8c_a7dc0b200f0959496819b3076472a1d9e}\label{check_board_8c_a7dc0b200f0959496819b3076472a1d9e}} 
+\index{checkBoard.c@{checkBoard.c}!checkingColumns@{checkingColumns}}
+\index{checkingColumns@{checkingColumns}!checkBoard.c@{checkBoard.c}}
+\subsubsection{\texorpdfstring{checkingColumns()}{checkingColumns()}}
+{\footnotesize\ttfamily bool checking\+Columns (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer }\end{DoxyParamCaption})}
+
+Funkcja sprawdza, czy kolumny sudoku sa dobrze wypelnione 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, gdy prawidlowo wypelnione 
+
+false, gdy zle wypelnione 
+\end{DoxyReturn}
+\mbox{\Hypertarget{check_board_8c_a7b41ee6df7b83fbed05006347c62b836}\label{check_board_8c_a7b41ee6df7b83fbed05006347c62b836}} 
+\index{checkBoard.c@{checkBoard.c}!checkingRows@{checkingRows}}
+\index{checkingRows@{checkingRows}!checkBoard.c@{checkBoard.c}}
+\subsubsection{\texorpdfstring{checkingRows()}{checkingRows()}}
+{\footnotesize\ttfamily bool checking\+Rows (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer }\end{DoxyParamCaption})}
+
+Funkcja sprawdza, czy wiersze sudoku sa dobrze wypelnione 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, gdy prawidlowo wypelnione 
+
+false, gdy zle wypelnione 
+\end{DoxyReturn}
+\mbox{\Hypertarget{check_board_8c_ac819d0f2eb5ba6c90422323fc75c16ed}\label{check_board_8c_ac819d0f2eb5ba6c90422323fc75c16ed}} 
+\index{checkBoard.c@{checkBoard.c}!checkingSquares@{checkingSquares}}
+\index{checkingSquares@{checkingSquares}!checkBoard.c@{checkBoard.c}}
+\subsubsection{\texorpdfstring{checkingSquares()}{checkingSquares()}}
+{\footnotesize\ttfamily bool checking\+Squares (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer }\end{DoxyParamCaption})}
+
+Funkcja sprawdza, czy kwadraty w sudoku sa dobrze wypelnione 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, gdy prawidlowo wypelnione 
+
+false, gdy zle wypelnione 
+\end{DoxyReturn}

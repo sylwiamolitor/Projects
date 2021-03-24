@@ -1,0 +1,5 @@
+C:\Users\Public\Documents\repos\JANET\JANET\obj\x64\Debug\JANET.csprojAssemblyReference.cache
+C:\Users\Public\Documents\repos\JANET\JANET\obj\x64\Debug\JANET.Form1.resources
+C:\Users\Public\Documents\repos\JANET\JANET\obj\x64\Debug\JANET.Properties.Resources.resources
+C:\Users\Public\Documents\repos\JANET\JANET\obj\x64\Debug\JANET.csproj.GenerateResource.cache
+C:\Users\Public\Documents\repos\JANET\JANET\obj\x64\Debug\JANET.csproj.CoreCompileInputs.cache

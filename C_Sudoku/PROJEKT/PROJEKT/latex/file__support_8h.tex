@@ -1,0 +1,77 @@
+\hypertarget{file__support_8h}{}\section{file\+\_\+support.\+h File Reference}
+\label{file__support_8h}\index{file\_support.h@{file\_support.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{file__support_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{file__support_8h_a44f25bb6d5061c7a1fc45ee95cb11ea1}{\+\_\+\+F\+I\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+H}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{file__support_8h_a2b60fe7b17f9f208d789ddf463b808c8}{reading}} (char $\ast$pointer, bool $\ast$pointer\+BO, char $\ast$number\+\_\+of\+\_\+file)
+\item 
+void \mbox{\hyperlink{file__support_8h_a2dd837ce4df0cc3761cdb8b544b317a7}{saving}} (char $\ast$pointer, bool $\ast$pointer\+BO, char $\ast$number\+\_\+of\+\_\+file)
+\item 
+void \mbox{\hyperlink{file__support_8h_a9906ae78c3ba63586e32c3180c5a5719}{cleaning}} (char $\ast$number\+\_\+of\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{file__support_8h_a44f25bb6d5061c7a1fc45ee95cb11ea1}\label{file__support_8h_a44f25bb6d5061c7a1fc45ee95cb11ea1}} 
+\index{file\_support.h@{file\_support.h}!\_FILE\_SUPPORT\_H@{\_FILE\_SUPPORT\_H}}
+\index{\_FILE\_SUPPORT\_H@{\_FILE\_SUPPORT\_H}!file\_support.h@{file\_support.h}}
+\subsubsection{\texorpdfstring{\_FILE\_SUPPORT\_H}{\_FILE\_SUPPORT\_H}}
+{\footnotesize\ttfamily \#define \+\_\+\+F\+I\+L\+E\+\_\+\+S\+U\+P\+P\+O\+R\+T\+\_\+H}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{file__support_8h_a9906ae78c3ba63586e32c3180c5a5719}\label{file__support_8h_a9906ae78c3ba63586e32c3180c5a5719}} 
+\index{file\_support.h@{file\_support.h}!cleaning@{cleaning}}
+\index{cleaning@{cleaning}!file\_support.h@{file\_support.h}}
+\subsubsection{\texorpdfstring{cleaning()}{cleaning()}}
+{\footnotesize\ttfamily void cleaning (\begin{DoxyParamCaption}\item[{char $\ast$}]{number\+\_\+of\+\_\+file }\end{DoxyParamCaption})}
+
+Funkcja czysci plik do zapisu 
+\begin{DoxyParams}{Parameters}
+{\em number\+\_\+of\+\_\+file} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__support_8h_a2b60fe7b17f9f208d789ddf463b808c8}\label{file__support_8h_a2b60fe7b17f9f208d789ddf463b808c8}} 
+\index{file\_support.h@{file\_support.h}!reading@{reading}}
+\index{reading@{reading}!file\_support.h@{file\_support.h}}
+\subsubsection{\texorpdfstring{reading()}{reading()}}
+{\footnotesize\ttfamily void reading (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer,  }\item[{bool $\ast$}]{pointer\+BO,  }\item[{char $\ast$}]{number\+\_\+of\+\_\+file }\end{DoxyParamCaption})}
+
+Funkcja odczytuje z pliku przykladowe sudoku 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em pointer\+BO} & wskaznik na tablice bool(ktora zawiera informacje czy mozna nadpisac cyfre) \\
+\hline
+{\em number\+\_\+of\+\_\+file} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{file__support_8h_a2dd837ce4df0cc3761cdb8b544b317a7}\label{file__support_8h_a2dd837ce4df0cc3761cdb8b544b317a7}} 
+\index{file\_support.h@{file\_support.h}!saving@{saving}}
+\index{saving@{saving}!file\_support.h@{file\_support.h}}
+\subsubsection{\texorpdfstring{saving()}{saving()}}
+{\footnotesize\ttfamily void saving (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer,  }\item[{bool $\ast$}]{pointer\+BO,  }\item[{char $\ast$}]{number\+\_\+of\+\_\+file }\end{DoxyParamCaption})}
+
+Funkcja zapisuje do pliku przykladowe sudoku 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em pointer\+BO} & wskaznik na tablice bool(ktora zawiera informacje czy mozna nadpisac cyfre) \\
+\hline
+{\em number\+\_\+of\+\_\+file} & nazwa pliku \\
+\hline
+\end{DoxyParams}

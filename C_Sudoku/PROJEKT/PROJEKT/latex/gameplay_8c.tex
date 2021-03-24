@@ -1,0 +1,141 @@
+\hypertarget{gameplay_8c}{}\section{gameplay.\+c File Reference}
+\label{gameplay_8c}\index{gameplay.c@{gameplay.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}gameplay.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Include dependency graph for gameplay.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameplay_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gameplay_8c_a51adca73ce37408a92afbcfe4d6f95cf}{deleting}} (char $\ast$pointer, bool $\ast$pointer\+BO, char number)
+\item 
+void \mbox{\hyperlink{gameplay_8c_a6c5f8b7dd440766a050bee14be148dc3}{write\+\_\+out}} (char $\ast$pointer)
+\item 
+void \mbox{\hyperlink{gameplay_8c_ab1a1a98ff24faab1abc098a522d29f22}{write\+In\+The\+Board}} (char $\ast$pointer, int vertical, int horizontal, char number, bool $\ast$pointer\+BO)
+\item 
+void \mbox{\hyperlink{gameplay_8c_a5430c56f50b763f177c239c82870e5ef}{generate\+Board}} (char $\ast$pointer, bool $\ast$pointer\+BO, char number)
+\item 
+bool \mbox{\hyperlink{gameplay_8c_ab4060a8585738e4cc60de0abb67af118}{check\+\_\+empty\+\_\+spaces}} (char $\ast$pointer)
+\item 
+void \mbox{\hyperlink{gameplay_8c_aeb6860d33ae020d6978e50084d32f1a3}{contact\+With\+User}} (char $\ast$pointer, bool $\ast$pointer\+BO, char $\ast$number\+\_\+of\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{gameplay_8c_ab4060a8585738e4cc60de0abb67af118}\label{gameplay_8c_ab4060a8585738e4cc60de0abb67af118}} 
+\index{gameplay.c@{gameplay.c}!check\_empty\_spaces@{check\_empty\_spaces}}
+\index{check\_empty\_spaces@{check\_empty\_spaces}!gameplay.c@{gameplay.c}}
+\subsubsection{\texorpdfstring{check\_empty\_spaces()}{check\_empty\_spaces()}}
+{\footnotesize\ttfamily bool check\+\_\+empty\+\_\+spaces (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer }\end{DoxyParamCaption})}
+
+Funkcja sprawdza, czy sa jakies puste miejsca w sudoku 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true gdy istnieja wolne miejsca 
+
+false gdy nie istnieja wolne miejsca 
+\end{DoxyReturn}
+\mbox{\Hypertarget{gameplay_8c_aeb6860d33ae020d6978e50084d32f1a3}\label{gameplay_8c_aeb6860d33ae020d6978e50084d32f1a3}} 
+\index{gameplay.c@{gameplay.c}!contactWithUser@{contactWithUser}}
+\index{contactWithUser@{contactWithUser}!gameplay.c@{gameplay.c}}
+\subsubsection{\texorpdfstring{contactWithUser()}{contactWithUser()}}
+{\footnotesize\ttfamily void contact\+With\+User (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer,  }\item[{bool $\ast$}]{pointer\+BO,  }\item[{char $\ast$}]{number\+\_\+of\+\_\+file }\end{DoxyParamCaption})}
+
+Funkcja umozliwia kontakt z uzytkownikiem 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em pointer\+BO} & wskaznik na tablice bool(ktora zawiera informacje czy mozna nadpisac cyfre) \\
+\hline
+{\em number\+\_\+of\+\_\+file} & nazwa pliku \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gameplay_8c_aeb6860d33ae020d6978e50084d32f1a3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameplay_8c_a51adca73ce37408a92afbcfe4d6f95cf}\label{gameplay_8c_a51adca73ce37408a92afbcfe4d6f95cf}} 
+\index{gameplay.c@{gameplay.c}!deleting@{deleting}}
+\index{deleting@{deleting}!gameplay.c@{gameplay.c}}
+\subsubsection{\texorpdfstring{deleting()}{deleting()}}
+{\footnotesize\ttfamily void deleting (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer,  }\item[{bool $\ast$}]{pointer\+BO,  }\item[{char}]{number }\end{DoxyParamCaption})}
+
+Funkcja usuwa 10 razy wiecej cyfr od podanej od uzytkownika liczby z wygenerowanej tablicy sudoku 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em pointer\+BO} & wskaznik na tablice bool(ktora zawiera informacje czy mozna nadpisac cyfre) \\
+\hline
+{\em number} & liczba podana przez uzytkownika \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gameplay_8c_a5430c56f50b763f177c239c82870e5ef}\label{gameplay_8c_a5430c56f50b763f177c239c82870e5ef}} 
+\index{gameplay.c@{gameplay.c}!generateBoard@{generateBoard}}
+\index{generateBoard@{generateBoard}!gameplay.c@{gameplay.c}}
+\subsubsection{\texorpdfstring{generateBoard()}{generateBoard()}}
+{\footnotesize\ttfamily void generate\+Board (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer,  }\item[{bool $\ast$}]{pointer\+BO,  }\item[{char}]{number }\end{DoxyParamCaption})}
+
+Funkcja generuje przykladowe sudoku o poziomie trudnosci podanym przez uzytkownika 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em pointer\+BO} & wskaznik na tablice bool(ktora zawiera informacje czy mozna nadpisac cyfre) \\
+\hline
+{\em number} & liczba podana przez uzytkownika \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{gameplay_8c_a5430c56f50b763f177c239c82870e5ef_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{gameplay_8c_a6c5f8b7dd440766a050bee14be148dc3}\label{gameplay_8c_a6c5f8b7dd440766a050bee14be148dc3}} 
+\index{gameplay.c@{gameplay.c}!write\_out@{write\_out}}
+\index{write\_out@{write\_out}!gameplay.c@{gameplay.c}}
+\subsubsection{\texorpdfstring{write\_out()}{write\_out()}}
+{\footnotesize\ttfamily void write\+\_\+out (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer }\end{DoxyParamCaption})}
+
+Funkcja wypisuje na ekranie konsoli sudoku 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gameplay_8c_ab1a1a98ff24faab1abc098a522d29f22}\label{gameplay_8c_ab1a1a98ff24faab1abc098a522d29f22}} 
+\index{gameplay.c@{gameplay.c}!writeInTheBoard@{writeInTheBoard}}
+\index{writeInTheBoard@{writeInTheBoard}!gameplay.c@{gameplay.c}}
+\subsubsection{\texorpdfstring{writeInTheBoard()}{writeInTheBoard()}}
+{\footnotesize\ttfamily void write\+In\+The\+Board (\begin{DoxyParamCaption}\item[{char $\ast$}]{pointer,  }\item[{int}]{vertical,  }\item[{int}]{horizontal,  }\item[{char}]{number,  }\item[{bool $\ast$}]{pointer\+BO }\end{DoxyParamCaption})}
+
+Funkcja wpisuje podana przez uzytkownika cyfre do danego miejsca 
+\begin{DoxyParams}{Parameters}
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em vertical} & pionowa wspolrzedna miejsca wpisania cyfry \\
+\hline
+{\em horizontal} & pozioma wspolrzedna miejsca wpisania cyfry \\
+\hline
+{\em number} & liczba podana przez uzytkownika \\
+\hline
+{\em pointer\+BO} & wskaznik na tablice bool(ktora zawiera informacje czy mozna nadpisac cyfre) \\
+\hline
+\end{DoxyParams}

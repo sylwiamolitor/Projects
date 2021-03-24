@@ -1,0 +1,110 @@
+\hypertarget{solution_8c}{}\section{solution.\+c File Reference}
+\label{solution_8c}\index{solution.c@{solution.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}solution.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}struct.\+h\char`\"{}}\newline
+Include dependency graph for solution.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{solution_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{solution_8c_a43ffdf5a1462d5d3078cb4492517bb1f}{can\+\_\+add}} (int x, int y, int value, char $\ast$pointer, char $\ast$helping\+\_\+pointer)
+\item 
+bool \mbox{\hyperlink{solution_8c_aeb02893bc45f1b02feb889a18bc7339f}{next\+\_\+area}} (int x, int y, char $\ast$pointer, char $\ast$helping\+\_\+pointer)
+\item 
+bool \mbox{\hyperlink{solution_8c_a54acf737c4bf3a8d88db99222ea12a4d}{solve\+\_\+it}} (int x, int y, char $\ast$pointer, char $\ast$helping\+\_\+pointer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{solution_8c_a43ffdf5a1462d5d3078cb4492517bb1f}\label{solution_8c_a43ffdf5a1462d5d3078cb4492517bb1f}} 
+\index{solution.c@{solution.c}!can\_add@{can\_add}}
+\index{can\_add@{can\_add}!solution.c@{solution.c}}
+\subsubsection{\texorpdfstring{can\_add()}{can\_add()}}
+{\footnotesize\ttfamily bool can\+\_\+add (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{value,  }\item[{char $\ast$}]{pointer,  }\item[{char $\ast$}]{helping\+\_\+pointer }\end{DoxyParamCaption})}
+
+Funkcja sprawdza, czy mozna dodac dana cyfre w dane miejsce 
+\begin{DoxyParams}{Parameters}
+{\em x} & wspolrzedna x miejsca dodania \\
+\hline
+{\em y} & wspolrzedna y miejsca dodania \\
+\hline
+{\em value} & cyfra do dodania \\
+\hline
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em helping\+\_\+pointer} & wskaznik na pomocnicza tablice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jesli mozna dodac 
+
+false jesli nie mozna dodac 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solution_8c_aeb02893bc45f1b02feb889a18bc7339f}\label{solution_8c_aeb02893bc45f1b02feb889a18bc7339f}} 
+\index{solution.c@{solution.c}!next\_area@{next\_area}}
+\index{next\_area@{next\_area}!solution.c@{solution.c}}
+\subsubsection{\texorpdfstring{next\_area()}{next\_area()}}
+{\footnotesize\ttfamily bool next\+\_\+area (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char $\ast$}]{pointer,  }\item[{char $\ast$}]{helping\+\_\+pointer }\end{DoxyParamCaption})}
+
+Funkcja umozliwia przejscie w nastepne miejsce tablicy sudoku 
+\begin{DoxyParams}{Parameters}
+{\em x} & wspolrzedna x miejsca dodania \\
+\hline
+{\em y} & wspolrzedna y miejsca dodania \\
+\hline
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em helping\+\_\+pointer} & wskaznik na pomocnicza tablice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jesli koniec tablicy 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{solution_8c_aeb02893bc45f1b02feb889a18bc7339f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{solution_8c_a54acf737c4bf3a8d88db99222ea12a4d}\label{solution_8c_a54acf737c4bf3a8d88db99222ea12a4d}} 
+\index{solution.c@{solution.c}!solve\_it@{solve\_it}}
+\index{solve\_it@{solve\_it}!solution.c@{solution.c}}
+\subsubsection{\texorpdfstring{solve\_it()}{solve\_it()}}
+{\footnotesize\ttfamily bool solve\+\_\+it (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char $\ast$}]{pointer,  }\item[{char $\ast$}]{helping\+\_\+pointer }\end{DoxyParamCaption})}
+
+Funkcja wypelnia sudoku 
+\begin{DoxyParams}{Parameters}
+{\em x} & wspolrzedna x miejsca dodania \\
+\hline
+{\em y} & wspolrzedna y miejsca dodania \\
+\hline
+{\em pointer} & wskaznik na tablice sudoku \\
+\hline
+{\em helping\+\_\+pointer} & wskaznik na pomocnicza tablice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true jesli dodano element 
+
+false jesli nie dodano elementu 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{solution_8c_a54acf737c4bf3a8d88db99222ea12a4d_cgraph}
+\end{center}
+\end{figure}

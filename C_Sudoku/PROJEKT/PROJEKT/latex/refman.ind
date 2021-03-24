@@ -1,0 +1,14 @@
+\begin{theindex}
+
+  \item {sudoku\_table}, \hyperpage{5}
+    \subitem {table\_of\_bool}, \hyperpage{5}
+    \subitem {table\_of\_numbers}, \hyperpage{6}
+
+  \indexspace
+
+  \item {table\_of\_bool}
+    \subitem {sudoku\_table}, \hyperpage{5}
+  \item {table\_of\_numbers}
+    \subitem {sudoku\_table}, \hyperpage{6}
+
+\end{theindex}

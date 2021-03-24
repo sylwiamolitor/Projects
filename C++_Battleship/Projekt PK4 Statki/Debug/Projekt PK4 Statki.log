@@ -1,0 +1,99 @@
+﻿  GameLogic.cpp
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\gamelogic.cpp(159): warning C4101: "e": lokalna zmienna, do której nie istnieje odwołanie
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\gamelogic.cpp(352): warning C4244: "inicjowanie": konwersja z "T" do "float", możliwa utrata danych
+          with
+          [
+              T=int
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\gamelogic.cpp(353): warning C4244: "inicjowanie": konwersja z "T" do "float", możliwa utrata danych
+          with
+          [
+              T=int
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\gamelogic.cpp(357): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\gamelogic.cpp(358): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+  GraphicObject.cpp
+  Interface.cpp
+  Projekt PK4 Statki.cpp
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(89): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(91): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(107): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(116): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(142): warning C4244: "=": konwersja z "T" do "float", możliwa utrata danych
+          with
+          [
+              T=int
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(143): warning C4244: "=": konwersja z "T" do "float", możliwa utrata danych
+          with
+          [
+              T=int
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(162): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(170): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(184): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(224): warning C4244: "argument": konwersja z "float" do "int", możliwa utrata danych
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(234): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(260): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(277): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(278): warning C4244: "inicjowanie": konwersja z "float" do "int", możliwa utrata danych
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(282): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(289): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(307): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(312): warning C4244: "argument": konwersja z "int" do "T", możliwa utrata danych
+          with
+          [
+              T=float
+          ]
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\projekt pk4 statki.cpp(34): warning C4101: "e": lokalna zmienna, do której nie istnieje odwołanie
+  Generowanie kodu...
+c:\users\sylwia\source\repos\projekt pk4 statki\projekt pk4 statki\gamelogic.cpp(118): warning C4715: "Create_Board::Check_If_You_Shot_Ship”: niewszystkie ścieżki kodu zwracają wartość
+  Projekt PK4 Statki.vcxproj -> C:\Users\SYLWIA\source\repos\Projekt PK4 Statki\Debug\Projekt PK4 Statki.exe

@@ -1,0 +1,8 @@
+﻿  pch.cpp
+  dllmain.cpp
+     Trwa tworzenie biblioteki C:\Users\STUDENT\Documents\GitHub\Projects\Assembler_Desaturation\DLLASM\x64\Release\DLLASM.lib i obiektu C:\Users\STUDENT\Documents\GitHub\Projects\Assembler_Desaturation\DLLASM\x64\Release\DLLASM.exp
+  Trwa generowanie kodu
+  Previous IPDB not found, fall back to full compilation.
+  All 0 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Zakończono generowanie kodu
+  DLLASM.vcxproj -> C:\Users\STUDENT\Documents\GitHub\Projects\Assembler_Desaturation\DLLASM\x64\Release\DLLASM.dll

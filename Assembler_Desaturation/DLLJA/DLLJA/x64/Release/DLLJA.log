@@ -1,0 +1,19 @@
+﻿  PlikCPP.cpp
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(37,13): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(80,12): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(94,16): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(105,26): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(107,26): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(126,12): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(129,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(130,26): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(132,26): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(136,20): warning C4244: "=": konwersja z "double" do "BYTE", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(137,24): warning C4244: "=": konwersja z "double" do "BYTE", możliwa utrata danych
+C:\Users\Public\Documents\repos\DLLJA\DLLJA\PlikCPP.cpp(138,24): warning C4244: "=": konwersja z "double" do "BYTE", możliwa utrata danych
+     Trwa tworzenie biblioteki C:\Users\Public\Documents\repos\DLLJA\x64\Release\DLLJA.lib i obiektu C:\Users\Public\Documents\repos\DLLJA\x64\Release\DLLJA.exp
+  Trwa generowanie kodu
+  Compiler switch has changed, fall back to full compilation.
+  All 3 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Zakończono generowanie kodu
+  DLLJA.vcxproj -> C:\Users\Public\Documents\repos\DLLJA\x64\Release\DLLJA.dll

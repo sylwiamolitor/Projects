@@ -1,0 +1,6 @@
+Male przedmioty
+Myszka|Chris Ampi|1999|2000|10|Dekoracja|
+Obrazy
+Krajobraz|Antoni Mus|2009|10|oryginal|Onrazjusz|
+Zabytkowe rekopisy
+Mapa Europy|Eklizejusz|1504|1000000|oryginalny|James C. Charles|

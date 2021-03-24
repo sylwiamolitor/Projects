@@ -1,0 +1,18 @@
+﻿  pch.cpp
+  dllmain.cpp
+  PlikCPP.cpp
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(26,31): warning C4244: "return": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(112,12): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(124,11): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(128,22): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(130,22): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(132,22): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(149,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(150,13): warning C4244: "inicjowanie": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(151,26): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(153,26): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(157,20): warning C4244: "=": konwersja z "float" do "BYTE", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(158,24): warning C4244: "=": konwersja z "float" do "BYTE", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(159,24): warning C4244: "=": konwersja z "float" do "BYTE", możliwa utrata danych
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(43,29): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\STUDENT\source\repos\DLLJA\DLLJA\PlikCPP.cpp(167,24): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.

@@ -8,3 +8,6 @@ My technological projects in the field of programming languages are:
 - Assembler - a program that performs the desaturation (desaturation) of a .bmp image, also reads and writes a bitmap.
 - C#/.NET - graphic design of the program above - desaturation, DLL support 
 - Kotlin - a program that supports .DXF files (loading, adding an object and saving) 
+- Python - an implementation of the genetic algorithm that supports solving mathematical equations
+- C#/.NET - a desktop application designed to record the equipment with LINQ
+- Java - a photo catalog using EXIF, mapjfx library and JAVAFX

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="xd2" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=desktop-mij0bi7;Initial Catalog=xd2;Integrated Security=True" SettingsObjectName="Inwentaryzacja.Properties.Settings" SettingsPropertyName="xd2ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Katedra" Member="Katedras">
+    <Type Name="Katedra">
+      <Column Name="ID_katedry" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_kierownika_katedry" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nazwa_katedry" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Wydział_ID_wydziału" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Katedra_Pomieszczenie" Member="Pomieszczenies" ThisKey="ID_katedry" OtherKey="Katedra_ID_katedry" Type="Pomieszczenie" />
+      <Association Name="Wydział_Katedra" Member="Wydział" ThisKey="Wydział_ID_wydziału" OtherKey="ID_wydziału" Type="Wydział" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Zlecenie" Member="Zlecenies">
+    <Type Name="Zlecenie">
+      <Column Name="id_zlecenia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="stan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Użytkownik_ID_użytkownika" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Pomieszczenie_ID_pomieszczenia" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Pomieszczenie_Zlecenie" Member="Pomieszczenie" ThisKey="Pomieszczenie_ID_pomieszczenia" OtherKey="ID_pomieszczenia" Type="Pomieszczenie" IsForeignKey="true" />
+      <Association Name="Użytkownik_Zlecenie" Member="Użytkownik" ThisKey="Użytkownik_ID_użytkownika" OtherKey="ID_użytkownika" Type="Użytkownik" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pomieszczenie" Member="Pomieszczenies">
+    <Type Name="Pomieszczenie">
+      <Column Name="ID_pomieszczenia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="numer_pokoju" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Katedra_ID_katedry" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="typ_pomieszczenia" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Wydział_ID_wydziału" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pomieszczenie_Zlecenie" Member="Zlecenies" ThisKey="ID_pomieszczenia" OtherKey="Pomieszczenie_ID_pomieszczenia" Type="Zlecenie" />
+      <Association Name="Pomieszczenie_Sprzęt" Member="Sprzęts" ThisKey="ID_pomieszczenia" OtherKey="Pomieszczenie_ID_pomieszczenia" Type="Sprzęt" />
+      <Association Name="Pomieszczenie_Użytkownik" Member="Użytkowniks" ThisKey="ID_pomieszczenia" OtherKey="Pomieszczenie_ID_pomieszczenia" Type="Użytkownik" />
+      <Association Name="Katedra_Pomieszczenie" Member="Katedra" ThisKey="Katedra_ID_katedry" OtherKey="ID_katedry" Type="Katedra" IsForeignKey="true" />
+      <Association Name="Wydział_Pomieszczenie" Member="Wydział" ThisKey="Wydział_ID_wydziału" OtherKey="ID_wydziału" Type="Wydział" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Sprzęt" Member="Sprzęts">
+    <Type Name="Sprzęt">
+      <Column Name="ID_sprzętu" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nazwa_sprzętu" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="stan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pomieszczenie_ID_pomieszczenia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="numer_inwentaryzacyjny" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Pomieszczenie_Sprzęt" Member="Pomieszczenie" ThisKey="Pomieszczenie_ID_pomieszczenia" OtherKey="ID_pomieszczenia" Type="Pomieszczenie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Użytkownik" Member="Użytkowniks">
+    <Type Name="Użytkownik">
+      <Column Name="ID_użytkownika" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="login" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="hasło" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="nazwa_stanowiska" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pomieszczenie_ID_pomieszczenia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Użytkownik_Zlecenie" Member="Zlecenies" ThisKey="ID_użytkownika" OtherKey="Użytkownik_ID_użytkownika" Type="Zlecenie" />
+      <Association Name="Pomieszczenie_Użytkownik" Member="Pomieszczenie" ThisKey="Pomieszczenie_ID_pomieszczenia" OtherKey="ID_pomieszczenia" Type="Pomieszczenie" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Wydział" Member="Wydziałs">
+    <Type Name="Wydział">
+      <Column Name="ID_wydziału" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_kierownika_wydziału" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nazwa_wydziału" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Wydział_Katedra" Member="Katedras" ThisKey="ID_wydziału" OtherKey="Wydział_ID_wydziału" Type="Katedra" />
+      <Association Name="Wydział_Pomieszczenie" Member="Pomieszczenies" ThisKey="ID_wydziału" OtherKey="Wydział_ID_wydziału" Type="Pomieszczenie" />
+    </Type>
+  </Table>
+</Database>

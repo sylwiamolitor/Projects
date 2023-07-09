@@ -1,0 +1,16 @@
+-1000000Delta=-7
+-100000Delta=0
+-10000Delta=0
+-1000Delta=0
+-100Delta=0
+-50Delta=0
+-10Delta=0
+-1Delta=0
+0Delta=0
+1Delta=0
+10Delta=0
+50Delta=0
+100Delta=0
+1000Delta=0
+1000Delta=0
+1250Delta=227

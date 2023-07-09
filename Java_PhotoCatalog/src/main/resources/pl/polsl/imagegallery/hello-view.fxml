@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.sothawo.mapjfx.MapView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.polsl.imagegallery.HelloController">
+   <right>
+      <MapView fx:id="mapView" maxHeight="500.0" maxWidth="450.0" prefHeight="200.0" prefWidth="176.0" BorderPane.alignment="TOP_RIGHT" />
+   </right>
+   <center>
+      <TableView fx:id="fileTableView" prefHeight="100.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+      </TableView>
+   </center>
+   <left>
+      <BorderPane prefHeight="203.0" prefWidth="327.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <Button fx:id="addFilterButton" mnemonicParsing="false" text="Add filter" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <ComboBox fx:id="filterAttribute" prefWidth="100.0" promptText="Filter attribute" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <ComboBox fx:id="filterCondition" prefWidth="100.0" promptText="Filter condition" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <TextField fx:id="filterValueTextField" prefWidth="100.0" promptText="Value" BorderPane.alignment="CENTER" />
+         </right>
+         <top>
+            <Button fx:id="changeAttribute" mnemonicParsing="false" text="Change value" BorderPane.alignment="CENTER">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </top>
+      </BorderPane>
+   </left>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <BorderPane BorderPane.alignment="CENTER">
+               <left>
+                  <Button fx:id="browseFilesButton" mnemonicParsing="false" onAction="#BrowseFilesButtonClicked" text="Add file" BorderPane.alignment="CENTER" />
+               </left>
+               <right>
+                  <Button fx:id="removeFilesButton" mnemonicParsing="false" onAction="#DeleteFilesButtonClicked" text="Remove files" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <Button fx:id="removeFilterButton" mnemonicParsing="false" onAction="#DeleteFiltersButtonClicked" text="Remove filter" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </bottom>
+         <left>
+            <TableView fx:id="filterTableView" prefHeight="400.0" prefWidth="322.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <ImageView fx:id="photoView" fitHeight="444.0" fitWidth="538.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </bottom>
+</BorderPane>

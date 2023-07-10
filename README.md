@@ -11,3 +11,4 @@ My technological projects in the field of programming languages are:
 - Python - an implementation of the genetic algorithm that supports solving mathematical equations
 - C#/.NET - a desktop application designed to record the equipment with LINQ
 - Java - a photo catalog using EXIF, mapjfx library and JAVAFX
+- C - Air Quality Sensor based on PM with LCD display, diode and saving to SD card
